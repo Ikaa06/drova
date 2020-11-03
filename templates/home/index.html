@@ -1,0 +1,805 @@
+{% load static %}
+<!doctype html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="robots" content="all"/>
+    <title>Дрова колотые с доставкой</title>
+    <meta name="description"
+          content="Продаем отборные сухие колотые дрова с доставкой, без гнилья и трухи. Длина поленьев 40-42 см. Всегда в наличии дрова березовые, осиновые, ольховые, еловые, дубовые. Доставляем дрова за 3 часа по Самарской области. Нужны дрова сегодня? Мы работаем ежедневно без перерыва и выходных с 08:00 до 22:00.">
+
+    <meta name="keywords" content="дрова березовые сухие колотые с доставкой, дубовые дрова с доставкой,">
+
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="msapplication-tap-highlight" content="no"/>
+
+    <meta name="format-detection" content="telephone=no">
+
+    <meta http-equiv="x-rim-auto-match" content="none">
+
+    <!--  -->
+    <link rel="stylesheet" href="{% static 'css/title.styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/designblock.scss.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/s3_styles.scss.css' %}">
+    <meta name="yandex-verification" content="34d7ec22d649fa42"/>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(68698801, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/68698801" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRBLT2LZML"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-WRBLT2LZML');
+    </script>
+</head>
+
+<body>
+<div class="dev_modal-wrapper d-none">
+    <div class="dev_modal">
+        <h3>Оставьте заявку</h3>
+        <i class="close fa fa-close"></i>
+        <form action="{% url 'send_to_email' %}" method="post" id="send_to_email">
+            {% csrf_token %}
+            <div class="input_group">
+                <p>Имя</p>
+                <input type="text" name="name">
+            </div>
+            <div class="input_group">
+                <p>Телефон</p>
+                <input type="text" class="phone_input" name="phone">
+            </div>
+            <div class="input_group">
+                <p>Что интересует?</p>
+                <textarea type="text" name="desk"></textarea>
+            </div>
+            <button>Оставить заявку</button>
+        </form>
+    </div>
+</div>
+<ul class="modal_social">
+    <li><a href="##"><img src="{% static 'd/vk_ico.png' %}" alt="vk_ico"></a></li>
+    <li><a href="##"><img src="{% static 'd/inst_ico.png' %}" alt="inst_ico"></a></li>
+    <li><a href="tel:+7 (987) 445-78-41"><img src="{% static 'd/phone_ico.png' %}" alt="phone_ico"></a></li>
+</ul>
+<div class="wrapper editorElement layer-type-wrapper">
+    <div class="editorElement layer-type-block ui-droppable block-10">
+        <div class="layout layout_center not-columned layout_31_id_36">
+            <div class="editorElement layer-type-block ui-droppable block-11">
+                <div class="layout columned columns-2 layout_36_id_30">
+                    <div class="layout column layout_30">
+                        <div class="site-name widget-19 widget-type-site_name editorElement layer-type-widget">
+                            <a href="index.html">
+                                <div class="sn-wrap">
+                                    <div class="sn-logo">
+
+                                        <img src="{% static 'd/logo.png' %}" alt="">
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="layout column layout_32">
+                        <div class="widget-20 horizontal menu-32 wm-widget-menu widget-type-menu_horizontal editorElement layer-type-widget"
+                             data-screen-button="none" data-responsive-tl="button" data-responsive-tp="button"
+                             data-responsive-ml="columned" data-more-text="..." data-child-icons="NaN">
+
+                            <div class="menu-button">
+                                Меню
+                            </div>
+
+                            <div class="menu-scroll">
+                                <ul>
+                                    <li class="menu-item"><a href="https://vk.com"><i class="fa fa-vk"></i></a></li>
+                                    <li class="menu-item"><a href="https://vk.com"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li class="menu-item"><a href="https://vk.com"><i class="fa fa-whatsapp"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="layout layout_36_id_33">
+                    <div
+                            class="phones-33 widget-21 phones-block contacts-block widget-type-contacts_phone editorElement layer-type-widget">
+                        <div class="inner">
+                            <div class="block-body-drop">
+                                <div class="cell-text">
+                                    <div class="title">Телефон:</div>
+                                    <div class="text_body">
+                                        <div><a href="tel:+7 (929) 704-18-01">+7 (929) 704-18-01</a></div>
+                                        <div><a href="tel:+7 (987) 445-78-41">+7 (987) 445-78-41</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                            class="schedule-34 widget-22 schedule-block contacts-block widget-type-contacts_schedule editorElement layer-type-widget">
+                        <div class="inner">
+                            <label class="cell-icon" for="tg-schedule-34">
+                                <div class="icon"></div>
+                            </label>
+                            <input id="tg-schedule-34" class="tgl-but" type="checkbox">
+                            <div class="block-body-drop">
+                                <div class="cell-text">
+                                    <div class="title">График работы:</div>
+                                    <div class="text_body">
+                                        08:00 - 22:00 без выходных
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="editorElement layer-type-block ui-droppable block-12">
+        <div class="editable_block-53 widget-36 editorElement layer-type-widget">
+            <div class="body">
+                <div class="text" style="background-image: url('{% static "bg_img.jpg" %}');">
+                    <div class="offer">
+                        <h2>Дрова колотые <br>с доставкой</h2>
+                        <p>• Доставка по самарской области от 500 рублей.</p>
+                        <p>• Оплата наличными или Сбербанк онлайн.
+                        <p>• Оплата после выгрузки</p>
+                        <button class="onOpenModal">Оставить заявку</button>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="layout layout_center not-columned layout_center_2_id_31_1">
+
+
+        <div class="blocklist blocklist-39 widget-25 horizontal_mode widget-type-block_list editorElement layer-type-widget"
+             data-slider="0,0,0,0,0" data-swipe="0,0,0,0,0" data-setting-mode="horizontal" data-setting-pause="4000"
+             data-setting-auto="1" data-setting-controls="1,1,1,1,1" data-setting-pager="1,1,1,1,1"
+             data-setting-pager_selector=".blocklist-39 .pager-wrap"
+             data-setting-prev_selector=".blocklist-39 .prev" data-setting-next_selector=".blocklist-39 .next"
+             data-setting-count="3" data-setting-columns="3,2,1,1,1" data-setting-move="" data-setting-prev_text=""
+             data-setting-next_text="" data-setting-auto_controls_selector=".blocklist-39 .auto_controls"
+             data-setting-auto_controls="0,0,0,0,0" data-setting-autoControlsCombine="">
+
+            <div class="header">
+                <div class="header_text">Почему мы?</div>
+            </div>
+            <div class="body-outer">
+                <div class="body">
+                    <div class="swipe-shadow-left"></div>
+                    <div class="swipe-shadow-right"></div>
+                    <div class="list">
+                        <div class="item-outer">
+                            <div class="item">
+                                <div class="image">
+ 										<span class="img-convert img-contain">
+ 											<img src="{% static 'thumb/2/Muss4ARYI765qVl2BqVF-Q/180r100/d/polenya.png' %}"
+                                                 alt="">
+ 										</span>
+                                </div>
+                                <div class="title">
+                                    Продаем только отборные дрова. Мы работаем с юр. лицами НДС 20%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-outer">
+                            <div class="item">
+                                <div class="image">
+ 										<span class="img-convert img-contain">
+ 											<img src="{% static 'thumb/2/fkWghiq9f1RdvUg8yFB9oA/180r100/d/dlina_polenyev_40_sm.png' %}"
+                                                 alt="">
+ 										</span>
+                                </div>
+                                <div class="title">
+                                    Стандартная длина поленьев 40 см. Под заказ напилим любой размер.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-outer">
+                            <div class="item">
+                                <div class="image">
+ 										<span class="img-convert img-contain">
+ 											<img src="{% static 'thumb/2/_G_b_hf_wZu3Zt0LNVra8g/180r100/d/dostavka.png' %}"
+                                                 alt="">
+ 										</span>
+                                </div>
+                                <div class="title">
+                                    Доставляем в течение 3-х часов. Привозим точный объём дров.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+            <div class="controls">
+                <span class="prev"></span>
+                <span class="next"></span>
+            </div>
+
+            <div class="bx-pager-wrap">
+                <div class="bx-auto_controls">
+                    <div class="bx-auto_controls">
+                        <div class="auto_controls"></div>
+                    </div>
+
+                    <div class="pager-wrap"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="editorElement layer-type-block ui-droppable block-2">
+        <div class="layout layout_center not-columned layout_4_id_3">
+
+
+            <div class="blocklist blocklist-3 widget-2 horizontal_mode widget-type-block_list editorElement layer-type-widget"
+                 data-slider="0,0,0,0,0" data-swipe="0,0,0,0,0" data-setting-mode="horizontal"
+                 data-setting-pause="4000" data-setting-auto="1" data-setting-controls="1,1,1,1,1"
+                 data-setting-pager="1,1,1,1,1" data-setting-pager_selector=".blocklist-3 .pager-wrap"
+                 data-setting-prev_selector=".blocklist-3 .prev" data-setting-next_selector=".blocklist-3 .next"
+                 data-setting-count="3" data-setting-columns="3,3,2,2,1" data-setting-move=""
+                 data-setting-prev_text="" data-setting-next_text=""
+                 data-setting-auto_controls_selector=".blocklist-3 .auto_controls"
+                 data-setting-auto_controls="0,0,0,0,0" data-setting-autoControlsCombine="">
+
+                <div class="header">
+                    <div class="header_text">Виды и цены на дрова естественной влажности</div>
+                </div>
+                <div class="body-outer">
+                    <div class="body">
+                        <div class="swipe-shadow-left"></div>
+                        <div class="swipe-shadow-right"></div>
+                        <div class="list">
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="title">
+                                        Смешанные
+                                    </div>
+                                    <div class="image">
+                                        <a href="##"> <span class="img-convert img-contain">
+ 													<img src="{% static 'thumb/2/-uoF1SoVGUDBhFyU-2ZTaA/270c150/d/smeshannye_drova.jpg' %}"
+                                                         alt="">
+ 												</span>
+                                        </a></div>
+                                    <div class="text">
+                                        <p>Состоящие из разных пород дерева, смешанные дрова пользуются большим спросом.
+                                            Состоят из:<br/>По самой низкой цене за 1
+                                            куб!<br/><br/></p>
+                                        <p>
+                                            Смешанные чурбаками 1 куб - <b>1400</b> руб
+                                        </p>
+                                    </div>
+                                    <div class="price">
+ 											<span class="price-inner">
+ 												<span class="price-value">от 1 700</span>
+ 												<span class="price-currency">₽/м³</span>
+ 											</span>
+                                    </div>
+                                    <div class="more"><a href="##" class="onOpenModal">Заказать</a></div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="title">
+                                        Березовые
+                                    </div>
+                                    <div class="image">
+                                        <a href="##"> <span class="img-convert img-contain">
+ 													<img src="{% static 'thumb/2/h5nNHs75_srQaYMzQes5Rw/270c150/d/berezovye_drova.jpg' %}"
+                                                         alt="">
+ 												</span>
+                                        </a></div>
+                                    <div class="text">
+                                        <p>Береза&nbsp;&ndash; это символ русской души.&nbsp;Пламя от берёзовых
+                                            поленьев&nbsp;ровное, без искр, а по теплоотдаче уступают лишь дубовым
+                                            дровам.</p>
+                                        <p>
+                                            Березовые чурбаками от <b>2200</b> руб.
+                                        </p>
+                                    </div>
+                                    <div class="price">
+ 											<span class="price-inner">
+ 												<span class="price-value">от 2 500</span>
+ 												<span class="price-currency">₽/м³</span>
+ 											</span>
+                                    </div>
+                                    <div class="more"><a href="##" class="onOpenModal">Заказать</a></div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="title">
+                                        Дубовые
+                                    </div>
+                                    <div class="image">
+                                        <a href="##"> <span class="img-convert img-contain">
+													<img src="{% static 'thumb/2/ewxhDRJfoNZO2ZZdMWxGcA/270c150/d/dubovye_drova.jpg' %}"
+                                                         alt="">
+												</span>
+                                        </a></div>
+                                    <div class="text">
+                                        <p>Дубовые дрова &ndash; лучшие из лучших!&nbsp;Дуб имеет самую высокую
+                                            теплоотдачу и&nbsp;наполняет дом изысканным ароматом лесной свежести с
+                                            легким потрескиванием
+
+                                        </p>
+                                        <p>Дуб чурбаками 1 куб - <b>1600 руб</b></p>
+                                    </div>
+                                    <div class="price">
+											<span class="price-inner">
+												<span class="price-value">от 2 000</span>
+												<span class="price-currency">₽/м³</span>
+											</span>
+                                    </div>
+                                    <div class="more"><a href="##" class="onOpenModal">Заказать</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                </div>
+                <div class="controls">
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                </div>
+
+                <div class="bx-pager-wrap">
+                    <div class="bx-auto_controls">
+                        <div class="bx-auto_controls">
+                            <div class="auto_controls"></div>
+                        </div>
+
+                        <div class="pager-wrap"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="layout layout_center not-columned layout_center_2_id_31_3">
+        <div class="editable_block-43 widget-28 editorElement layer-type-widget">
+            <div class="body">
+                <div class="image">
+                    <img src="{% static 'thumb/2/r0GucF2P_LV1L-NRo19vnw/180r100/d/1_spichka.png' %}" alt=""></div>
+                <div class="title">Наши дрова, загораются мгновенно от одной спички!</div>
+                <div class="text">
+                    <p>Сделайте заказ сейчас! Получите большую стопку сухих щепок для розжига в подарок!</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layout layout_center not-columned layout_center_2_id_31_5">
+        <div class="editable_block-44 widget-29 editorElement layer-type-widget">
+            <div class="body">
+                <div class="image">
+                    <img src="{% static 'thumb/2/C_iyyYssGQxVnJi5rSDbqg/960r141/d/lyuboy_razmer_polena.png' %}" alt="">
+                </div>
+                <div class="title">Мы напилим любой размер полена</div>
+                <div class="text">
+                    <p>Просто скажите какой Вам нужен размер и мы напилим для Вас!</p>
+                    <table border="0" class="table0" style="width: 100%;">
+                        <tbody>
+                        <tr>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="lyuboy_razmer_polena_ot_25_do_50_sm.jpg"
+                                    src="{% static 'thumb/2/KYSZXxCMeN_vm_j4pyBzxA/470r/d/lyuboy_razmer_polena_ot_25_do_50_sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="lyuboy_razmer_polena_ot_25_do_50sm.jpg"
+                                    src="{% static 'thumb/2/D7gpY1ohA9oyejy-7jEghg/470r/d/lyuboy_razmer_polena_ot_25_do_50sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><span
+                                    style="font-size: 18pt;"><strong>Малая длина 25-30 см</strong></span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="malaya_dlina_polena_25_sm.jpg"
+                                    src="{% static 'thumb/2/KlObPIbgJAhoCnBJEdqk4A/470r/d/malaya_dlina_polena_25_sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="malaya_dlina_polena_30_sm.jpg"
+                                    src="{% static 'thumb/2/4kTFAS8vs46AMrO4grHtxA/470r/d/malaya_dlina_polena_30_sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><span
+                                    style="font-size: 18pt;"><strong>Средняя длина 35-40 см</strong></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="srednyaya_dlina_polena_35_sm.jpg"
+                                    src="{% static 'thumb/2/QLXxNdeZDhpK9EBzNJqmeg/470r/d/srednyaya_dlina_polena_35_sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="srednyaya_dlina_polena_40_sm.jpg"
+                                    src="{% static 'thumb/2/45ECaSMNXflUFJ9oqeUdYg/470r/d/srednyaya_dlina_polena_40_sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><span
+                                    style="font-size: 18pt;"><strong>Большая длина 45-50 см</strong></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="bolshaya_dlina_polena_45_sm.jpg"
+                                    src="{% static 'thumb/2/0-6qMWhKHFRw4ZVTGCxAEw/470r/d/bolshaya_dlina_polena_45_sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                            <td><a href="##"
+                                   class="highslide" onclick="return hs.expand(this)"><img
+                                    alt="bolshaya_dlina_polena_50_sm.jpg"
+                                    src="{% static 'thumb/2/4P6zQYPYphuQUAVcoOBYEg/470r/d/bolshaya_dlina_polena_50_sm.jpg' %}"
+                                    style="border-width: 0;"/></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="editorElement layer-type-block ui-droppable block-13">
+        <div class="layout layout_center not-columned layout_46_id_45">
+
+
+            <div class="blocklist blocklist-45 widget-30 horizontal_mode widget-type-block_list editorElement layer-type-widget"
+                 data-slider="0,0,0,0,0" data-swipe="0,0,0,0,0" data-setting-mode="horizontal"
+                 data-setting-pause="4000" data-setting-auto="1" data-setting-controls="1,1,1,1,1"
+                 data-setting-pager="1,1,1,1,1" data-setting-pager_selector=".blocklist-45 .pager-wrap"
+                 data-setting-prev_selector=".blocklist-45 .prev" data-setting-next_selector=".blocklist-45 .next"
+                 data-setting-count="3" data-setting-columns="3,2,1,1,1" data-setting-move=""
+                 data-setting-prev_text="" data-setting-next_text=""
+                 data-setting-auto_controls_selector=".blocklist-45 .auto_controls"
+                 data-setting-auto_controls="0,0,0,0,0" data-setting-autoControlsCombine="">
+
+                <div class="header">
+                    <div class="header_text">Мы доставляем уложенные дрова в течение 3-х часов</div>
+                </div>
+                <div class="body-outer">
+                    <div class="body">
+                        <div class="swipe-shadow-left"></div>
+                        <div class="swipe-shadow-right"></div>
+                        <div class="list">
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/U3VyFHDIVK5qRrYifivGFA/310c176/d/bort_1_drova_migom_siney_1.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/U3VyFHDIVK5qRrYifivGFA/310c176/d/bort_1_drova_migom_siney_1.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/90_BILWSIBsHvWXBGonsJg/310c176/d/bort_1_drova_migom_siney_2.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/U3VyFHDIVK5qRrYifivGFA/310c176/d/bort_1_drova_migom_siney_1.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/wO1_LdSc2IhbY5e8erd-6w/310c176/d/bort_1_drova_migom_siney_3.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/wO1_LdSc2IhbY5e8erd-6w/310c176/d/bort_1_drova_migom_siney_3.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/bMGLkjAs8SROJ852jQTLcw/310c176/d/bort_2_drova_migom_krasnyy_1.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/bMGLkjAs8SROJ852jQTLcw/310c176/d/bort_2_drova_migom_krasnyy_1.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/JUlaZWcACbHL4WPTqb1bOQ/310c176/d/bort_2_drova_migom_krasnyy_2.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/JUlaZWcACbHL4WPTqb1bOQ/310c176/d/bort_2_drova_migom_krasnyy_2.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/inALbL7-asOIwMA6ozDgXg/310c176/d/bort_2_drova_migom_krasnyy_3.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/inALbL7-asOIwMA6ozDgXg/310c176/d/bort_2_drova_migom_krasnyy_3.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/4yYEhb0IiDf7DaQpsH-ncA/310c176/d/bort_3_drova_migom_belyy_1.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/4yYEhb0IiDf7DaQpsH-ncA/310c176/d/bort_3_drova_migom_belyy_1.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/mmIk5JdRCLEANBQ4XHC6Gw/310c176/d/bort_3_drova_migom_belyy_2.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/mmIk5JdRCLEANBQ4XHC6Gw/310c176/d/bort_3_drova_migom_belyy_2.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-outer">
+                                <div class="item">
+                                    <div class="image">
+ 											<span class="img-convert img-cover">
+ 												<img src="{% static 'thumb/2/7vEDLOkilfIaAdtrbNWHvg/310c176/d/bort_3_drova_migom_belyy_3.jpg' %}"
+                                                     alt="" class="highslide"
+                                                     onclick="hs.expand(this,{src:'{% static "thumb/2/7vEDLOkilfIaAdtrbNWHvg/310c176/d/bort_3_drova_migom_belyy_3.jpg" %}'});">
+ 											</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                </div>
+                <div class="controls">
+                    <span class="prev"></span>
+                    <span class="next"></span>
+                </div>
+
+                <div class="bx-pager-wrap">
+                    <div class="bx-auto_controls">
+                        <div class="bx-auto_controls">
+                            <div class="auto_controls"></div>
+                        </div>
+
+                        <div class="pager-wrap"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="layout layout_center not-columned layout_center_2_id_31_9">
+        <div class="editorElement layer-type-block ui-droppable block-14">
+            <h1 class="h1 widget-33 widget-type-h1 editorElement layer-type-widget">
+                Дрова сухие колотые с доставкой по Самарской области
+            </h1>
+            <article class="content-48 content widget-32 widget-type-content editorElement layer-type-widget">
+                <p>ДРОВА МИГОМ&nbsp;&ndash; это решение любых проблем с поставкой качественных дров. Мы работаем с
+                    2003 года. Чтобы не обнаружить поленницу пустой перед самым началом отопительного сезона,
+                    закажите колотые дрова с доставкой в нашей компании заранее. Мы предлагаем не только
+                    качественные дрова из березы, но и осиновые, ольховые, еловые и дубовые дрова, как естественной
+                    влажности, так и сухие. Еще один плюс &ndash; низкая цена и скидки постоянным клиентам!</p>
+                <h2 align="center">Какие дрова выбрать?</h2>
+                <p>Береза &ndash; лучшая древесина для отопления, горит ровно, поддерживает оптимальную
+                    теплоотдачу. Во время горения березовых дров окружающее пространство наполняется ароматом
+                    полезных смол, которые оказывают дезинфицирующий эффект.</p>
+                <p>Также у нас всегда можно дешево купить дрова из таких пород древесины, как:</p>
+                <ul>
+                    <li>Ольха. Не выделяет дыма, практически не коптит, дает приятный слабый аромат во время
+                        горения.
+                    </li>
+                    <li>Дуб. Горит с высокой теплоотдачей, быстро разгорается, горение поддерживается достаточно
+                        долго.
+                    </li>
+                    <li>Осина. Не только не коптит, но и помогает очищать дымоход. При горении выделяет полезные
+                        смолы.
+                    </li>
+                    <li>Ель. Приятно потрескивают во время горения из-за высокой влажности, но растапливаются
+                        легко.
+                    </li>
+                </ul>
+                <p>Все виды дров доступны в любых нужных вам объемах и предлагаются с
+                    доставкой в Самарской области.</p>
+                <h3 align="center">Наши преимущества</h3>
+                <ul>
+                    <li>Квалифицированный штат, кольщиков, грузчиков, водителей &ndash; нас 30 человек.</li>
+                    <li>Собственный автопарк грузовых автомобилей для доставки дров &ndash; 12 машин.</li>
+                    <li>Оперативная доставка &ndash; за 3 часа.</li>
+                </ul>
+                <p>Мы работаем без отдыха, без праздников и без выходных. Доставим дрова в труднодосдупные места на
+                    полноприводных автомобилях.</p>
+                <h4 style="text-align: center;">Звоните сейчас&nbsp;+7 (929) 704-18-01!<br/>Каждому клиенту
+                    подарок&nbsp;&ndash; большая стопка сухих щепок для розжига!</h4>
+            </article>
+        </div>
+    </div>
+
+    <div class="editorElement layer-type-block ui-droppable block-6">
+        <div class="layout layout_center not-columned layout_15_id_29">
+            <div class="editorElement layer-type-block ui-droppable block-9">
+
+
+                <div
+                        class="form-25 widget-17 horizontal_mode widget-type-form_adaptive editorElement layer-type-widget">
+                    <div class="form__header">Сделайте заказ сейчас и в подарок получите большую стопку сухих щепок
+                        для розжига!
+                    </div>
+                    <div class="">
+                        <form method="post" action="{% url 'send_to_email' %}" id="send_to_email">
+                            {% csrf_token %}
+                            <div class="form-table">
+                                <div class="form-tbody">
+                                    <div class="form-item-group group-text">
+                                        <div class="form-item form-text name"><label class="form-item__body"><span
+                                                class="icon img_name"></span><input class="wm-input-default "
+                                                                                    placeholder=" Ваше имя:  "
+                                                                                    type="text" size="1"
+                                                                                    maxlength="Array" value=""
+                                                                                    name="name"/></label>
+                                        </div>
+                                        <div class="form-item form-text phone"><label class="form-item__body"><span
+                                                class="icon img_phone"></span><input
+                                                class="wm-input-default phone_input" placeholder=" Телефон: * "
+                                                type="text" size="1" maxlength="Array" value="" name="phone"
+                                                id="d[1]" required/></label></div>
+                                    </div>
+                                </div>
+                                <div class="form-tfoot">
+                                    <div class="form-item-group group-button">
+                                        <div class="form-item form-submit">
+                                            <div class="form-item__body">
+                                                <button type="submit"><span>Заказать дрова</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="editorElement layer-type-block ui-droppable block-8">
+                    <div class="layout column layout_26">
+                        <div
+                                class="phones-26 widget-18 phones-block contacts-block widget-type-contacts_phone editorElement layer-type-widget">
+                            <div class="inner">
+                                <label class="cell-icon" for="tg-phones-26">
+                                </label>
+                                <input id="tg-phones-26" class="tgl-but" type="checkbox">
+                                <div class="block-body-drop">
+                                    <div class="cell-text">
+                                        <div class="title">Или просто позвоните нам</div>
+                                        <div class="text_body">
+                                            <a href="tel:+7 (929) 704-18-01">+7 (929) 704-18-01</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="{% static 'js/jquery.maskedinput.min.js' %}" type="text/javascript"></script>
+
+<script type="text/javascript" src="{% static 'js/title.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/auto_height.js' %}"></script>
+<script>
+    const modalOpen = () => {
+        document.querySelector(".dev_modal-wrapper").classList.remove("d-none")
+    }
+    const modalClose = () => {
+        document.querySelector(".dev_modal-wrapper").classList.add("d-none")
+    }
+    document.querySelector(".dev_modal > i.close").onclick = () => {
+        modalClose()
+    }
+    for (let btn of document.querySelectorAll(".onOpenModal")) {
+        btn.onclick = () => {
+            modalOpen()
+        }
+    }
+
+</script>
+<script src="{% static 'js/ajax.js' %}" type="text/javascript"></script>
+<script>
+    $('.button-35').data('callback', function () {
+        console.log('123')
+        $(".phone_input").mask("+7 (999) 999 99 99");
+    });
+</script>
+</body>
+
+</html>

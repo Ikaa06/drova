@@ -1,0 +1,28 @@
+.popover-wrap-35 .popover-body {
+  border-radius: 0;
+  border: none; }
+  .popover-wrap-35 .popover-body input[type=text], .popover-wrap-35 .popover-body textarea {
+    font-size: 14px;
+    border-radius: 0; }
+  .popover-wrap-35 .popover-body .s3_form_field_headline {
+    text-align: center; }
+  .popover-wrap-35 .popover-body .s3_button_large:hover {
+    background: #ed5845; }
+  .popover-wrap-35 .popover-body .s3_form_item {
+    margin: 0; }
+    .popover-wrap-35 .popover-body .s3_form_item select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      color: #ababab;
+      width: 100%;
+      background: #fff;
+      border-radius: 0;
+      height: 50px;
+      background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#ababab' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+      background-position: 100% 50%;
+      background-repeat: no-repeat; }
+    .popover-wrap-35 .popover-body .s3_form_item.even {
+      margin-bottom: 18px; }
+      .popover-wrap-35 .popover-body .s3_form_item.even input, .popover-wrap-35 .popover-body .s3_form_item.even textarea, .popover-wrap-35 .popover-body .s3_form_item.even select {
+        border-top: none; }

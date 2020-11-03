@@ -1,0 +1,71 @@
+body .button-sale.button-sale--flex-auto {
+  box-shadow: none;
+  border-radius: 0;
+  background: #de351c; }
+
+body .popover-container .popover-wrap.fast-sale-popover-my-wrapper {
+  border-left: 0;
+  border-right: 0; }
+  body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body {
+    width: 100%;
+    padding-top: 20px;
+    border-radius: 0; }
+    body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .my-th-frm .gr-button {
+      background: #d4321b;
+      border: 0;
+      border-radius: 0;
+      width: 100%;
+      line-height: 50px;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin-top: 18px; }
+      body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .my-th-frm .gr-button:hover {
+        background: #ed5845; }
+      body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .my-th-frm .gr-head {
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        color: #5e5e5e;
+        text-align: center;
+        border-bottom: 1px solid #c2c2c2;
+        margin: 0 -30px 25px;
+        padding: 0 30px 10px; }
+      body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .my-th-frm input {
+        padding: 0px 8px;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        width: 100%;
+        color: #b1b1b1;
+        font-family: 'Montserrat', sans-serif;
+        min-height: 50px;
+        font-size: 14px; }
+      body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .my-th-frm .gr-title {
+        display: none; }
+    body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .gr-field:nth-child(2n) .gr-value {
+      margin-bottom: 18px; }
+      body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .gr-field:nth-child(2n) .gr-value input, body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .gr-field:nth-child(2n) .gr-value textarea, body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body .gr-field:nth-child(2n) .gr-value select {
+        border-top: 0; }
+
+body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-close:after {
+  font-size: 0;
+  background: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20baseProfile%3D%22full%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Aev%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2Fxml-events%22%20xml%3Aspace%3D%22preserve%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2210px%22%20height%3D%2210px%22%20%20viewBox%3D%220%200%2010%2010%22%20preserveAspectRatio%3D%22none%22%20shape-rendering%3D%22geometricPrecision%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20fill%3D%22%23f62e13%22%20d%3D%22M9.949%2C8.533%20L8.535%2C9.948%20L5.000%2C6.412%20L1.464%2C9.948%20L0.050%2C8.533%20L3.585%2C4.998%20L0.050%2C1.463%20L1.464%2C0.048%20L5.000%2C3.584%20L8.535%2C0.048%20L9.949%2C1.463%20L6.414%2C4.998%20L9.949%2C8.533%20Z%22%2F%3E%3C%2Fsvg%3E") 50% 50% no-repeat;
+  background-size: 16px auto; }
+
+body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body input[type=text], body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body textarea, body .popover-container .popover-wrap.fast-sale-popover-my-wrapper .popover-body select {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+  background: #fff;
+  margin-bottom: 0; }
+
+@media (min-width: 900px) {
+    body .localpagelist2 {
+      margin-left: -10px;
+      margin-right: -10px; }
+      body .localpagelist2 .localpagelist2__block {
+        box-sizing: border-box;
+        width: 20%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0; } }
